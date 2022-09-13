@@ -13,7 +13,7 @@ rstore = redis.Redis()
 
 
 def generate_random_shortened_url(n: int = 5) -> str:
-    return "".join(secrets.choice(ALPHABET) for _ in range(5))
+    return "".join(secrets.choice(ALPHABET) for _ in range(n))
 
 
 def shorten_url(url: str) -> str:
@@ -34,7 +34,7 @@ def get_url(code: str) -> Optional[str]:
 
 
 if __name__ == "__main__":
-    # generate_random_shortened_url("ajdnaj")
+    # generate_random_shortened_url()
     url = "https://pybit.es/articles/what-we-learned-from-building-our-own-cms-using-django/"
     code = shorten_url(url)
     print(code)
