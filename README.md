@@ -1,6 +1,8 @@
 # A simple URL shortener using Redis
 
-In this repo I built a quick and simple URL shortener showing random vs deterministic url codes (or slug) generation (I prefer the latter), storing the key (code), value (full URL) pairs in Redis. Lastly I use Typer (+ rich) for a nice quick command line interface to shorten and go to URLs. 
+In this repo I built a quick and simple URL shortener showing random vs deterministic url code (or slug) generation (I prefer the latter), storing the key (code), value (full URL) pairs in Redis. 
+
+Lastly I used Typer and rich (`pip install typer[all]`) for a quick and nice command line interface to shorten and go to URLs. 
 
 TODO: build a simple GUI as an alternative interface ...
 
