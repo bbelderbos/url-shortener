@@ -48,7 +48,7 @@ while True:
     event, values = window.read()
     print(event, values)
 
-    if event == sg.WIN_CLOSED or event == 'Cancel':
+    if event is None or event == "Exit":
         break
 
     if event == "Shorten":
